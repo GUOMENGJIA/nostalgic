@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+.nav{
+    /*background-color: #ffdf3c;*/
+    width: 100%;
+    height: 60px;
+    /*opacity: 30%;*/
+    border-bottom: pink 2px solid;
+    /* float: left; */
+}
+.left{
+    width: 70%;
+    height: 45px;
+    float: left;
+    /*border: red 1px solid;*/
+    padding-top: 15px;
+
+
+}
+.left>div{
+    width: 80px;
+    height: 30px;
+    /*border: black 1px solid;*/
+    float: left;
+    /*font: bold 2px 微软雅黑;*/
+    color: #ffa1b7;
+    padding-left: 20px;
+    /*background-color: black;*/
+
+}
+.right{
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    /*border: red 1px solid;*/
+}
+.cricle{
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    border-radius: 20px;
+    /*border: 2px pink solid;*/
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height:40px;
+}
+.big-box{
+    position: absolute;
+    z-index: 2;
+    width: 85%;
+    height: 500px;
+    padding-top: 50px;
+    padding-left: 15%;
+}
+.box{
+    width: 1000px;
+    height: 480px;
+}
+
+.left-box{
+    width: 125px;
+    height: 400px;
+    padding-right: 20px;
+    float: left;
+
+}
+.ul1,.ul2{
+    position: relative;
+    float: right;
+}
+.ul2{
+    opacity: 0.8;
+}
+.left-box>ul>li{
+    height: 70px;
+    width: 60px;
+    padding-top: 10px;
+
+}
+.left-box>ul>li>p{
+    width: 60px;
+    text-align: center;
+    font-size: 12px;
+}
+.b1{
+    background: url("images/小猫爪.jpg");
+}
+.b2{
+    background: url("images/001.jpeg");
+}
+.b3{
+    background: url("images/002.jpeg");
+}
+.b4{
+    background: url("images/003.jpeg");
+}
+.b5{
+    background: url("images/004.jpeg");
+}
+.b6{
+    background: url("images/005.jpeg");
+}
+.b7{
+    background: url("images/006.jpeg");
+}
+.color{
+    width: 60px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.return{
+    width: 60px;
+    height: 30px;
+    background: url("images/小返回3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.input1{
+    border: 1px #ffa1b7 solid;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #f8fdff;
+    background-color: #ffa1b7;
+}
+.upload{
+    opacity: 50%;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.right-box{
+    width: 780px;
+    height: 100%;
+    /*border: red 2px solid;*/
+    float: left;
+}
+.right-left{
+    width: 350px;
+    height: 90%;
+    /*border: 2px solid pink;*/
+    position: relative;
+    float: left;"
+}
+.right-right{
+    width: 350px;
+    height: 90%;
+    /*border: 2px solid #ff7d90;*/
+    position: relative;
+    float: right;
+}
+.right-left>img,.right-right>img{
+    width:350px;
+    height:350px;
+    border: 2px solid palevioletred;
+}
+.bottom{
+    width: 95%;
+    height: 50px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 5%;
+    /*border-top: #0c39ff 2px solid;*/
+}
+
+.withdraw{
+    width: 165px;
+    padding-top: 10px;
+    font-size: 12px;
+    position: relative;
+    float: left;
+    /*color: black;*/
+    opacity: 50%;
+}
+.withdraw_button{
+    background: url("images/撤退2 .png");
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.download{
+    float: right;
+    width: 165px;
+}
+.download_button{
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: url("images/下载3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

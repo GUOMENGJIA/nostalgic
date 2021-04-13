@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <title>老照片上色</title>
+    <link rel="stylesheet" href="../static/操作-scenery.css">
+    <script language="JavaScript" src="../static/操作.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <div>恋旧</div>
+            <div>Nostalgia</div>
+        </div>
+        <div class="right">
+            <div class="cricle"><span>{{ g.user.username[0]}}</span></div>
+        </div>
+    </div>
+    <div class="big-box">
+        <div class="box">
+            <div class="left-box">
+                <ul class="ul1">
+                    <li>
+                        <form action="http://127.0.0.1:5000/color_scenery" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b1"></button>
+                        </form>
+                        <p>上色</p>
+                    <li>
+                        <form action="http://127.0.0.1:5000/watermark_scenery" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b1"></button>
+                        </form>
+                        <p>水印</p>
+                    </li>
+                    <li>
+                        <button class="lj_button color b1" onclick="show()"></button>
+                        <p>滤镜</p>
+                    </li>
+                    <li>
+                        <a href="do"><button class="return"></button></a>
+                        <p>返回</p>
+                    </li>
+                </ul>
+                <ul class="ul2" style="display: none; border: 1px solid pink; border-radius: 5px;">
+                    </li>
+                    <li class="lj">
+                        <form action="http://127.0.0.1:5000/filter_scenery_three" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b2"></button>
+                        </form>
+                        <p>浮雕</p>
+                    </li>
+                    <li class="lj">
+                        <form action="http://127.0.0.1:5000/filter_scenery_one" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b3"></button>
+                        </form>
+                        <p>边界增强</p>
+                    </li>
+                    <li class="lj">
+                        <form action="http://127.0.0.1:5000/filter_scenery_two" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b4"></button>
+                        </form>
+                        <p>边缘</p>
+                    </li>
+                    <li class="lj">
+                        <form action="http://127.0.0.1:5000/filter_scenery_four" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b5"></button>
+                        </form>
+                        <p>复古</p>
+                    </li>
+                    <li class="lj">
+                        <form action="http://127.0.0.1:5000/filter_scenery_five" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b6"></button>
+                        </form>
+                        <p>模糊</p>
+                    </li>
+                    <li class="lj">
+                        <form action="http://127.0.0.1:5000/filter_scenery_six" enctype='multipart/form-data' method='POST' >
+                            <button type="submit" name= 'color' class="color b7"></button>
+                        </form>
+                        <p>铅笔画</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="right-box">
+                <div class="right-left">
+                    <img src="{{ url_for('static',filename='scenery/original.jpg',_t=val1) }}" alt="你的图片被外星人劫持了～～"/>
+                    <div class="bottom">
+                        <form action="http://127.0.0.1:5000/upload_scenery" enctype='multipart/form-data' method='POST' class="upload">
+                            <input type="file" name="file3" class="input1" style="margin-top:20px;"/>
+                            <input type="submit" value="上传" style="margin-top:15px;"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-right">
+                    <img src="{{ url_for('static',filename=filename,_t=val1) }}" alt="你的图片被外星人劫持了～～"/>
+                    <div class="bottom">
+                        <form action="http://127.0.0.1:5000/scenery_withdraw" enctype='multipart/form-data' method='POST'  class="withdraw">
+                            <button type="submit" name= 'color' class="withdraw_button"></button>
+                        </form>
+                        <form action="http://127.0.0.1:5000/download_scenery" enctype='multipart/form-data' method='POST'  class="download">
+                            <button class="download_button" onclick="tk()"></button>
+                        </form>
+                    </div>
+                    <div style="height:30px;padding-left: 10px;">
+                        <p style="width: 50px; float: left;font-size:12px;text-align: center;">撤回操作</p>
+                        <p style=" width: 50px; float: right;font-size:12px; text-align: center;">下载</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var lj_button=document.getElementsByClassName("lj_button")[0];
+    var lj=document.getElementsByClassName("ul2")[0];
+    var tmp = false
+    function show() {
+        if (tmp==false){
+            lj.style.display="block";
+            tmp = true
+        }
+        else{
+            lj.style.display="none";
+            tmp = false
+        }
+    }
+
+</script>
+</body>
+</html>

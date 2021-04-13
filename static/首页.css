@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+#canvas {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width:100%;
+}
+.nav{
+    position: absolute;
+    z-index: 2;
+    /*background-color: #ffdf3c;*/
+    width: 100%;
+    height: 60px;
+    /*background-color: floralwhite;*/
+    border-bottom: 2px solid lightpink;
+}
+.left{
+    width: 70%;
+    height: 45px;
+    float: left;
+    /*border: red 1px solid;*/
+    padding-top: 15px;
+
+}
+.left>div{
+    width: 80px;
+    height: 30px;
+    /*border: pink 1px solid;*/
+    float: left;
+    /*font: bold 2px 微软雅黑;*/
+    color: #ffa1b7;
+    padding-left: 20px;
+}
+.register-load{
+    width: 20%;
+    height: 47px;
+    float: right;
+    padding-top: 13px;
+    padding-right: 18px;
+
+}
+.register-load>a>button{
+    width: 60px;
+    height: 30px;
+    /*background-color: crimson;*/
+    background-color: pink;
+    border-radius: 6px;
+    float: right;
+    font: bold 2px 微软雅黑;
+    color: white;
+    border: 0px;
+}
+.register{
+    margin-right: 10px;
+}
+.body{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 540px;
+}
+
+.left_box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    /*border: 1px red solid;*/
+}
+.background1{
+    position: relative;
+    top: 139px;
+    left: 50px;
+    width: 480px;
+    height: 205px;
+}
+.box1{
+	position: relative;
+    top:-130px;
+    left: 130px;
+    width: 360px;
+    height: 180px;
+    /*border: 1px solid red;*/
+	overflow: hidden;
+    z-index: 4;
+}
+.slider1 {
+	width: 2160px;
+    height: 180px;
+	position: relative;
+	left: 0px;
+}
+.slide {
+	width: 360px;
+	float: left;
+}
+
+
+
+.right_box{
+    width: 48%;
+    height: 100%;
+    float: right;
+    /*border: 1px red solid;*/
+}
+
+.background2{
+    position: relative;
+    top: 230px;
+    left: 50px;
+    width: 480px;
+    height: 205px;
+}
+.box2{
+	position: relative;
+    top:-35px;
+    left: 130px;
+    width: 360px;
+    height: 180px;
+    /*border: 1px solid red;*/
+	overflow: hidden;
+    z-index: 4;
+}
+.slider2{
+	width: 2160px;
+    height: 180px;
+	position: relative;
+	left: 0px;
+}
